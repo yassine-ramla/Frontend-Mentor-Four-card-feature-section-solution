@@ -1,0 +1,158 @@
+:root {
+  /* Primary */
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  /* Neutral */
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* Weights: 200, 400, 600 */
+}
+
+body {
+  width: 100vw;
+  min-height: 100svh;
+  background-color: var(--Very-Light-Gray);
+  padding: 80px 0;
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 90%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+header {
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h1>span {
+  font-weight: 200;
+}
+
+header>p {
+  color: var(--Grayish-Blue);
+  margin: 20px 5% 0;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 10px 20px 0px rgb(227, 227, 233);
+  border-radius: 12px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+article::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+article>h2 {
+  color: var(--Very-Dark-Blue);
+  font-weight: 600;
+}
+
+article>p {
+  color: var(--Grayish-Blue);
+  margin: 10px 0 30px;
+  font-weight: 400;
+}
+
+article>img {
+  align-self: flex-end;
+}
+
+.supervisor::after {
+  background-color: var(--Cyan);
+}
+
+.team::after {
+  background-color: var(--Red);
+}
+
+.karma::after {
+  background-color: var(--Orange);
+}
+
+.calculator::after {
+  background-color: var(--Blue);
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 20px 0;
+  }
+
+  main {
+    max-width: 1300px;
+  }
+
+  header {
+    max-width: 600px;
+    margin: auto;
+  }
+
+  section {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 40px;
+  }
+
+  article {
+    width: 100%;
+    height: 100%;
+  }
+
+  .supervisor {
+    height: 50%;
+    grid-row: 1 / 3;
+    grid-column: 1;
+  }
+
+  .calculator {
+    height: 50%;
+    grid-row: 1 / 3;
+    grid-column: 3;
+  }
+}
