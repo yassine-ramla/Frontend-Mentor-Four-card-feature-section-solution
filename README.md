@@ -14,8 +14,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
     - [Built with](#built-with)
   - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
 ## Overview
 
 ### The challenge
@@ -31,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/a-responsive-component-using-css-grid-and-flexbox-fVpXsv9cux)
+- Live Site URL: [live site URL](https://yassine-ramla.github.io/Frontend-Mentor-Four-card-feature-section-solution/)
 
 ## My process
 
